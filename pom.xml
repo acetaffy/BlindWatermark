@@ -36,9 +36,11 @@
         </dependency>
 
         <dependency>
-            <groupId>org.openpnp</groupId>
+            <groupId>org</groupId>
             <artifactId>opencv</artifactId>
-            <version>4.5.2-2</version>
+            <version>4.5.2</version>
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/src/main/resources/lib/opencv-452.jar</systemPath>
         </dependency>
 
 
