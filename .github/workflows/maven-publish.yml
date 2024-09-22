@@ -23,6 +23,15 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+        
+    - name: Install OpenCV manually
+      run: |
+       mvn install:install-file \
+          -Dfile=src/main/resources/lib/opencv-452.jar \
+          -DgroupId=org.opencv \
+          -DartifactId=opencv \
+          -Dversion=4.5.2 \
+          -Dpackaging=jar
 
     # Build the project with Maven
     - name: Build with Maven
